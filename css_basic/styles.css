@@ -16,4 +16,22 @@ aside {
     flex: 1;
     overflow-y: auto
 }
-
+header {
+    background-color: blue;
+}
+header li {
+    color: aliceblue;
+}
+ul.header1 {
+    color: white;
+}
+h1 {
+    color: blue;
+}
+#Made {
+    color: black;
+    background-color: aquamarine;
+}
+.logo {
+    size: 2rem;
+}
