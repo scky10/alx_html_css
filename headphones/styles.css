@@ -1,0 +1,37 @@
+body, main {
+    display: flex
+}
+body {
+    flex-direction: column;
+}
+main {
+    flex-direction: row;
+    flex: auto;
+}
+article {
+    flex: 2;
+    overflow-y: auto
+}
+aside {
+    flex: 1;
+    overflow-y: auto
+}
+header {
+    background-color: blue;
+}
+header li {
+    color: aliceblue;
+}
+ul.header1 {
+    color: white;
+}
+h1 {
+    color: blue;
+}
+#Made {
+    color: black;
+    background-color: aquamarine;
+}
+.logo {
+    size: 2rem;
+}
