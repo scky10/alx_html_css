@@ -207,7 +207,7 @@ header {
     line-height: 2em;
     color: #ffff;
 }
-
+/*
 .pentatexte h2 {
     font-size: 46px;
     font-weight: bold;
@@ -241,8 +241,8 @@ header {
   transform: translate(-50%, -50%);
   color: #fff;
   padding: 10px;
-} 
-
+}
+*/
 <!----------------Contact Us---------------->
 .contact-section {
     margin-top: 0px;
@@ -326,4 +326,5 @@ footer {
     display: inline-block;
     padding: 0 5px;
 }
+
 
