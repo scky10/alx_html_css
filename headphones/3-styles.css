@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'source-sans-pro', 'Spin-Cycle-OT';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav-links {
+    list-style: none;
+
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #FF6565;
+}
+
+.wrapper {
+    background-image: url(/Users/youssef/Documents/alx_html_css/headphones/images/headphones_hero_1.jpg);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+
+}
+
+.banner p {
+    text-align: center;
+    max-width: 637px;
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 20px;
+
+
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 32px ;
+    font-weight: bold;
+    margin-top: 220px; 
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.banner h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.banner button {
+    padding: 15px 30px;
+    margin: 50px 0;
+    border-radius: 30px;
+    background-color: #FF6565;
+    color: #ffff;
+}
+
+.banner button:active {
+    opacity: 0.9;
+  }
+
+  /* Mobile navigation menu styles */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon__bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .menu-icon {
+        display: block;
+        align-self: center;
+        justify-content: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-icon:checked ~ .nav-links {
+        display: flex;
+    }
+    
+    .logo {
+    align-self:center ;
+    justify-self: center;
+    }
+}
+
+.whatwedo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wwdo-exemples {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 110px;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.wwdo-exemples .wwdo1 {
+    padding: 10px;
+    width: 207px;
+    height: 180px;
+}
+
+.wwdo-exemples .wwdo1 img {
+    padding: 20%;
+}
+
+.wwdo-text p {
+    padding: 70px 25px;
+    text-align: center;
+    max-width: 637px;
+    align-self: center;
+    line-height: 2em;
+}
+
+
+.ourresults {
+    background-image: url(/Users/youssef/Documents/alx_html_css/headphones/images/headphones_hero_2.jpg);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.result-text p {
+    padding-top: 200px;
+    padding-bottom: 40px;
+
+    text-align: center;
+    max-width: 637px;
+    align-self: center;
+    line-height: 2em;
+    color: #ffff;
+}
+
+.pentatexte h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pentatexte p {
+    font-size: 14;
+    color: #fff;
+    text-align: center;
+}
+
+.result-exemples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.result {
+    position: relative;
+    padding: 30px;
+}
+
+.pentatexte {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 10px;
+}
+
+<!----------------Contact Us---------------->
+.contact-section {
+    margin-top: 0px;
+    border: 1px solid black;
+    max-width: 400px;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FF6565;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
