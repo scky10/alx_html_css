@@ -163,6 +163,20 @@ header {
     align-items: center; 
 }
 
+.wwdo1 {
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 .wwdo-exemples .wwdo1 {
     padding: 10px;
@@ -231,7 +245,22 @@ header {
 
 .result {
     position: relative;
-    padding: 30px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: bounce 1s infinite;
+}
+      
+    @keyframes bounce {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: 200px;
+        }
+        100% {
+          top: 0;
+        }
 }
 
 .pentatexte {
